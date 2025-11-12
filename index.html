@@ -6,128 +6,156 @@
   <title>Portfolio | Usanipa Suphothmuang</title>
 
   <!-- Font & Icon -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a2d045cc0b.js" crossorigin="anonymous"></script>
 
   <style>
+    :root {
+      --main-color: #5AA9E6;
+      --accent-color: #F2789F;
+      --light-bg: #f8fbff;
+      --text-color: #333;
+      --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      --radius: 18px;
+    }
+
     body {
       font-family: "Prompt", sans-serif;
       margin: 0;
-      background-color: #f4f7fc;
-      color: #333;
-      line-height: 1.7;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.8;
     }
 
     header {
-      background: linear-gradient(135deg, #007bff, #00b4d8);
+      background: linear-gradient(135deg, var(--main-color), var(--accent-color));
       color: white;
       text-align: center;
-      padding: 3rem 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 4rem 1rem;
+      box-shadow: var(--box-shadow);
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
     }
 
     .profile-card {
-      max-width: 400px;
+      max-width: 420px;
       margin: 0 auto;
     }
 
     .profile-img {
-      width: 130px;
-      height: 130px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      border: 4px solid white;
+      border: 5px solid white;
       object-fit: cover;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
 
     h1 {
       margin: 1rem 0 0.3rem;
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
     .eng-name {
-      margin-top: -0.5rem;
-      opacity: 0.8;
-      font-size: 1rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 0.5rem;
     }
 
     .social-links a {
       color: white;
-      margin: 0 10px;
-      font-size: 1.3rem;
-      transition: transform 0.2s ease, color 0.2s ease;
+      margin: 0 12px;
+      font-size: 1.4rem;
+      transition: 0.3s ease;
     }
 
     .social-links a:hover {
-      color: #ffdf5d;
-      transform: scale(1.2);
+      color: #fffdd0;
+      transform: translateY(-3px);
     }
 
     main {
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
     }
 
     section {
       background: white;
-      padding: 1.5rem 2rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--box-shadow);
       margin-bottom: 2rem;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     section:hover {
-      transform: translateY(-3px);
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
-      color: #007bff;
-      border-left: 5px solid #007bff;
-      padding-left: 10px;
+      color: var(--main-color);
+      border-left: 6px solid var(--accent-color);
+      padding-left: 12px;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
     }
 
     ul {
       padding-left: 20px;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
     }
 
     .project {
-      display: flex;
-      flex-direction: column;
-      background: #f8f9fa;
-      border-radius: 10px;
-      overflow: hidden;
-      margin-bottom: 1.5rem;
+      background: #f9faff;
+      border-radius: 12px;
+      padding: 1.2rem;
+      margin-bottom: 1.2rem;
+      border-left: 5px solid var(--main-color);
     }
 
-    .project img {
-      width: 100%;
-      object-fit: cover;
+    .project h3 {
+      margin-top: 0;
+      color: var(--accent-color);
     }
 
-    .project div {
-      padding: 1rem;
-    }
-
-    .project a {
+    .contact-info a {
+      color: var(--accent-color);
       text-decoration: none;
-      color: #007bff;
-      font-weight: 500;
     }
 
-    .project a:hover {
+    .contact-info a:hover {
       text-decoration: underline;
     }
 
     footer {
-      background: #007bff;
+      background: var(--main-color);
       color: white;
       text-align: center;
-      padding: 1rem;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      font-size: 0.9em;
+      padding: 1.2rem;
+      font-size: 0.95rem;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        padding: 3rem 1rem;
+      }
+      .profile-img {
+        width: 110px;
+        height: 110px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
     }
   </style>
 </head>
@@ -140,9 +168,8 @@
       <p class="eng-name">Usanipa Suphothmuang</p>
       <p>นักศึกษาปี 3 สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยราชภัฏอุดรธานี</p>
       <div class="social-links">
-        <a href="mailto:66040233101@udru.ac.th" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/Usanipa101" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        
+        <a href="mailto:66040233101@udru.ac.th"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Usanipa101" target="_blank"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </header>
@@ -151,9 +178,7 @@
     <section id="skills">
       <h2><i class="fas fa-code"></i> ทักษะ (Skills)</h2>
       <ul>
-        <li><strong>Programming:</strong> Python, Java, HTML/CSS, JavaScript</li>
-        <li><strong>AI & Data:</strong> TensorFlow, scikit-learn, Power BI, SQL</li>
-        <li><strong>Tools:</strong> Git, VS Code, Figma, Google Colab</li>
+        <li><strong>Tools:</strong> Figma</li>
         <li><strong>Soft Skills:</strong> การสื่อสาร, การทำงานเป็นทีม, การแก้ปัญหา</li>
       </ul>
     </section>
@@ -162,46 +187,50 @@
       <h2><i class="fas fa-laptop-code"></i> ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
 
       <div class="project">
-        <div>
-          <h3>ระบบค้าขายสินค้าออนไลน์(E-Commerce)</h3>
-          <h3>เว็บไซต์ประเพณีอาสาน</h3>
-          <a href="https://github.com/username/meeting-room-booking" target="_blank">🔗 GitHub Repository</a>
-        </div>
+        <h3>ระบบค้าขายสินค้าออนไลน์ (E-Commerce)</h3>
+        <p>เว็บไซต์ตัวอย่างสำหรับการซื้อขายสินค้าออนไลน์ พัฒนาโดยใช้ HTML, CSS, JavaScript และ PHP</p>
+      </div>
+
+      <div class="project">
+        <h3>เว็บไซต์ประเพณีอีสาน</h3>
+        <p>จัดทำเว็บไซต์เพื่อเผยแพร่ข้อมูลเกี่ยวกับวัฒนธรรมและประเพณีท้องถิ่นภาคอีสาน</p>
       </div>
     </section>
 
     <section id="education">
       <h2><i class="fas fa-graduation-cap"></i> การศึกษา (Education)</h2>
-      <p>โรงเรียนบ้านหนองแวง ระดับประถมศึกษา</p>
-      <p>โรงเรียนกุดดู่พิทยาคม ระดับมัธยมศึกษา</p>
-      <p>การศึกษาปัจจุบัน คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ</p>
-      <p>มหาวิทยาลัยราชภัฏอุดรธานี (2566 - ปัจจุบัน)</p>
+      <ul>
+        <li>โรงเรียนบ้านหนองแวง — ระดับประถมศึกษา</li>
+        <li>โรงเรียนกุดดู่พิทยาคม — ระดับมัธยมศึกษา</li>
+        <li>คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยราชภัฏอุดรธานี (2566 - ปัจจุบัน)</li>
+      </ul>
     </section>
 
     <section id="activities">
       <h2><i class="fas fa-award"></i> กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
       <ul>
-        <li>อบรม “AI”</li>
-        <li>อบรม “DL”</li>
-       
+        <li>เข้าร่วมอบรม “AI”</li>
+        <li>เข้าร่วมอบรม “DL”</li>
       </ul>
     </section>
 
     <section id="career">
       <h2><i class="fas fa-bullseye"></i> องค์ประกอบเสริม (Career Interest)</h2>
-      <p>เป้าหมายในอนาคตคือการทำงานด้าน มีงานทำ ที่ตัวเองทำได้เเละพยายามที่จะทำในสิ่งๆนั้นได้</p>
+      <p>เป้าหมายในอนาคตคือการทำงานในสายเทคโนโลยีสารสนเทศ พัฒนาทักษะการออกแบบเว็บไซต์ และสร้างสรรค์งานที่มีคุณค่า</p>
     </section>
-  </main>
-    <section>
-      <h2>ติดต่อ (Contact)</h2>
+
+    <section id="contact">
+      <h2><i class="fas fa-phone"></i> ติดต่อ (Contact)</h2>
       <div class="contact-info">
-        <p> Email: <strong>66040233144@udru.ac.th</strong></p>
-        <p> GitHub: <strong><a href="https://github.com/Woraluethai" target="_blank">github.com/Usanipa101</a></strong></p>
-        <p> Facebook: <strong><a href="https://facebook.com/Usanipa.Suphomuang" target="_blank">Facebook</a></strong></p>
-        <p> Instagram: <strong><a href="https://instagram.com/usaaaaa_aaaa" target="_blank">@usaaaaa_aaaa</a></strong></p>
-        <p> Tel: <strong>098-204-5606</strong></p>
+        <p>📧 Email: <strong>66040233101@udru.ac.th</strong></p>
+        <p>💻 GitHub: <a href="https://github.com/Usanipa101" target="_blank">github.com/Usanipa101</a></p>
+        <p>📘 Facebook: <a href="https://facebook.com/Usanipa.Suphomuang" target="_blank">Facebook</a></p>
+        <p>📷 Instagram: <a href="https://instagram.com/usaaaaa_aaaa" target="_blank">@usaaaaa_aaaa</a></p>
+        <p>📞 Tel: <strong>098-204-5606</strong></p>
       </div>
     </section>
+  </main>
+
   <footer>
     <p>© 2025 Usanipa Suphothmuang | Portfolio on GitHub Pages</p>
   </footer>
