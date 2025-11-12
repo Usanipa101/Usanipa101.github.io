@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Usanipa Suphothmuang</title>
+
+  <!-- Font & Icon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d045cc0b.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: "Prompt", sans-serif;
+      margin: 0;
+      background-color: #f4f7fc;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007bff, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .profile-card {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin: 1rem 0 0.3rem;
+      font-size: 1.8rem;
+    }
+
+    .eng-name {
+      margin-top: -0.5rem;
+      opacity: 0.8;
+      font-size: 1rem;
+    }
+
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.3rem;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .social-links a:hover {
+      color: #ffdf5d;
+      transform: scale(1.2);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: white;
+      padding: 1.5rem 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+      transition: transform 0.2s ease;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      color: #007bff;
+      border-left: 5px solid #007bff;
+      padding-left: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      background: #f8f9fa;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+
+    .project img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .project div {
+      padding: 1rem;
+    }
+
+    .project a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: 500;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="profile-card">
+      <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-img">
+      <h1>อุษณิภา สุโพธิ์เมือง</h1>
+      <p class="eng-name">Usanipa Suphothmuang</p>
+      <p>นักศึกษาปี 3 สาขาเทคโนโลยีสารสนเทศ มหาวิทยาลัยราชภัฏอุดรธานี</p>
+      <div class="social-links">
+        <a href="mailto:66040233101@udru.ac.th" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Usanipa101" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="skills">
+      <h2><i class="fas fa-code"></i> ทักษะ (Skills)</h2>
+      <ul>
+        <li><strong>Programming:</strong> Python, Java, HTML/CSS, JavaScript</li>
+        <li><strong>AI & Data:</strong> TensorFlow, scikit-learn, Power BI, SQL</li>
+        <li><strong>Tools:</strong> Git, VS Code, Figma, Google Colab</li>
+        <li><strong>Soft Skills:</strong> การสื่อสาร, การทำงานเป็นทีม, การแก้ปัญหา</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2><i class="fas fa-laptop-code"></i> ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
+
+      <div class="project">
+        <img src="https://via.placeholder.com/800x400?text=Web+App" alt="Web Project">
+        <div>
+          <h3>ระบบจองห้องประชุมออนไลน์</h3>
+          <p>เว็บไซต์จองห้องประชุมออนไลน์ พัฒนาโดยใช้ HTML, CSS, และ JavaScript</p>
+          <a href="https://github.com/username/meeting-room-booking" target="_blank">🔗 GitHub Repository</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2><i class="fas fa-graduation-cap"></i> การศึกษา (Education)</h2>
+      <p>โรงเรียนบ้านหนองแวง ระดับประถมศึกษา</p>
+      <p>โรงเรียนกุดดู่พิทยาคม ระดับมัธยมศึกษา</p>
+      <p>การศึกษาปัจจุบัน คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ</p>
+      <p>มหาวิทยาลัยราชภัฏอุดรธานี (2566 - ปัจจุบัน)</p>
+    </section>
+
+    <section id="activities">
+      <h2><i class="fas fa-award"></i> กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
+      <ul>
+        <li>อบรม “AI”</li>
+       
+      </ul>
+    </section>
+
+    <section id="career">
+      <h2><i class="fas fa-bullseye"></i> องค์ประกอบเสริม (Career Interest)</h2>
+      <p>เป้าหมายในอนาคตคือการทำงานด้าน AI Engineer หรือ Data Scientist</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Usanipa Suphothmuang | Portfolio on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
